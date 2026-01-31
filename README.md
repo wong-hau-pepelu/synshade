@@ -1,6 +1,6 @@
 # SynShade
 
-A fine-tuned BERT model for detecting insider threat recruitment patterns in dark web chatters.
+A fine-tuned BERT model for detecting insider threat recruitment patterns in dark web communications.
 
 ## Overview
 
@@ -15,7 +15,7 @@ SynShade uses a fine-tuned Google BERT model (`small_bert/bert_en_uncased_L-4_H-
 
 ## Use Case
 
-The model analyzes dark web chatter to identify potential insider threat recruitment activity, helping security teams:
+The model analyzes dark web communications to identify potential insider threat recruitment activity, helping security teams:
 - Monitor underground forums and channels
 - Detect recruitment patterns early
 - Differentiate noise from genuine threats
@@ -26,7 +26,18 @@ The model was trained on Telegram chatter collected from dark web sources, label
 - **Class 0**: Advertising/general content
 - **Class 1**: Insider recruitment attempts
 
-Only data samples are listed here. For the SynShade model, please check the huggingface page: 
+Note: Due to the sensitive nature of the data, the training dataset is not publicly available.
 
-https://huggingface.co/wong-hau-pepelu/synshade-insider-threat-detector
 
+## Training Details
+
+- **Training samples**: 6,062
+- **Validation samples**: 1,299
+- **Test samples**: 1,300
+- **Optimizer**: Adam (lr=3e-5)
+- **Batch size**: 32
+- **Max sequence length**: 128 tokens
+
+## Disclaimer
+
+This tool is intended for cybersecurity research and defensive purposes only.
