@@ -27,5 +27,6 @@ The model was trained on Telegram chatter collected from dark web sources, label
 - **Class 1**: Insider recruitment attempts
 
 Only data samples are listed here. For the SynShade model, please check the huggingface page: 
+
 https://huggingface.co/wong-hau-pepelu/synshade-insider-threat-detector
 
