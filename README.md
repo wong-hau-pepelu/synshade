@@ -25,4 +25,5 @@ The model analyzes dark web chatter to identify potential insider threat recruit
 The model was trained on Telegram chatter collected from dark web sources, labeled for:
 - **Class 0**: Advertising/general content
 - **Class 1**: Insider recruitment attempts
+
 Only data samples are listed here. For the SynShade model, please check the huggingface page: 
